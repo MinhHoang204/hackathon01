@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./index.css">
+    <link  rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-input">
+            <header class="header">
+                <h2> TodoInput </h2>
+                <input id="new-task" class="header-input" placeholder="New Todo" type="text">
+                <button id="btn-add" class="btn-add">Add new task</button>
+            </header>
+            <div class="todo-list">
+              <h2>TodoList</h2>
+            <ul class="list-work">
+                <li class="work-item">
+                  <div class="work-item-left">
+                    <input type="checkbox" onclick="choose()">
+                    <p> Practice ReactJS </p>
+                  </div>
+                  <div class="work-item-right"> 
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                  </div>
+                </li>
+                <li class="work-item">
+                    <div class="work-item-left">
+                      <input type="checkbox" type="click" onclick="choose()">
+                      <p> Learn Redux </p>
+                    </div>
+                    <div class="work-item-right">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                      <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                  </li>
+                  <li class="work-item">
+                    <div class="work-item-left">
+                      <input type="checkbox" type="text" onclick="choose()">
+                      <p> Code portfolio in React </p>
+                    </div>
+                    <div class="work-item-right">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                      <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                  </li>
+                  <li class="work-item">
+                    <div class="work-item-left">
+                      <input type="checkbox" onclick="choose()">
+                      <p> Learn React Native </p>
+                    </div>
+                    <div class="work-item-right">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                      <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                  </li>
+                </ul>
+              <div class="footer-buttons">
+                  <button id="btn-delete-done" class="btn-delete">Delete done tasks</button>
+                  <button id="btn-delete-all" class="btn-delete">Delete all tasks</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
